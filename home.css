@@ -851,7 +851,7 @@
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  background-color: #717171;
+  background-color: #f9d28f;
 }
 .home-container22 {
   flex: 0 0 auto;
@@ -864,7 +864,7 @@
   align-items: center;
   flex-direction: row;
   justify-content: flex-start;
-  background-color: #717171;
+  background-color: #f9d28f;
 }
 .home-container23 {
   flex: 1;
@@ -1192,7 +1192,7 @@
 }
 
 .home-get-in-touch {
-  width: 100%;
+  width: 150%;
   display: flex;
   max-width: var(--dl-size-size-maxcontent);
   margin-top: var(--dl-space-space-fiveunits);
@@ -1206,8 +1206,9 @@
 }
 .home-content-container6 {
   width: 100%;
+  left: 0px;
   display: flex;
-  align-self: stretch;
+  align-self: left;
   margin-top: var(--dl-space-space-fiveunits);
   align-items: center;
   flex-direction: row;
@@ -1217,7 +1218,7 @@
   width: 40%;
   display: flex;
   align-self: stretch;
-  align-items: center;
+  align-items: left;
   padding-top: var(--dl-space-space-fiveunits);
   margin-right: var(--dl-space-space-fiveunits);
   padding-left: var(--dl-space-space-tenunits);
@@ -1225,7 +1226,7 @@
   padding-right: var(--dl-space-space-tenunits);
   flex-direction: column;
   padding-bottom: var(--dl-space-space-fiveunits);
-  background-color: var(--dl-color-gray-900);
+  
 }
 .home-locations-container {
   display: flex;
@@ -1296,4 +1297,71 @@
   align-items: flex-start;
   flex-direction: column;
   background-color: var(--dl-color-gray-900);
+}
+
+
+
+.home-cta-btn2 {
+  display: inline-block;
+  border-radius: 25px;
+  background-color: #f58f30;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 10px;
+  padding: 10px;
+  width: 80px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.home-cta-btn2 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.home-cta-btn2 span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.home-cta-btn2:hover span {
+  padding-right: 25px;
+}
+
+.home-cta-btn2:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+.home-message {
+  width: 70%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 0px solid #f58f30;
+}
+.home-email{
+  width: 70%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 0px solid #f58f30;
+}
+.home-name5{
+  width: 70%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: none;
+  border-bottom: 0px solid #f58f30;
 }
