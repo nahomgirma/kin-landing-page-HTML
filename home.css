@@ -326,17 +326,6 @@
   flex-direction: row;
   justify-content: space-between;
 }
-.home-burger-menu {
-  display: none;
-  align-items: center;
-  flex-direction: row;
-  justify-content: space-between;
-}
-.home-menu {
-  width: 24px;
-  height: 24px;
-  margin-left: var(--dl-space-space-unit);
-}
 .home-mobile-menu {
   top: 0px;
   flex: 0 0 auto;
@@ -376,7 +365,7 @@
   align-items: flex-start;
   flex-direction: column;
 }
-.home-icon03 {
+.home-icon {
   width: 24px;
   height: 24px;
 }
@@ -453,13 +442,13 @@
   flex-direction: column;
   background-color: var(--dl-color-gray-900);
 }
-.home-icon05 {
+.home-icon02 {
   fill: var(--dl-color-gray-white);
   width: var(--dl-size-size-unit);
   height: var(--dl-size-size-unit);
   transition: 0.3s;
 }
-.home-icon05:hover {
+.home-icon02:hover {
   fill: var(--dl-color-purple-default);
 }
 .home-link1 {
@@ -474,13 +463,13 @@
   flex-direction: column;
   background-color: var(--dl-color-gray-900);
 }
-.home-icon07 {
+.home-icon04 {
   fill: var(--dl-color-gray-white);
   width: var(--dl-size-size-unit);
   height: var(--dl-size-size-unit);
   transition: 0.3s;
 }
-.home-icon07:hover {
+.home-icon04:hover {
   fill: var(--dl-color-pink-default);
 }
 .home-link2 {
@@ -495,13 +484,13 @@
   flex-direction: column;
   background-color: var(--dl-color-gray-900);
 }
-.home-icon09 {
+.home-icon06 {
   fill: var(--dl-color-gray-white);
   width: var(--dl-size-size-unit);
   height: var(--dl-size-size-unit);
   transition: 0.3s;
 }
-.home-icon09:hover {
+.home-icon06:hover {
   fill: var(--dl-color-turquoise-default);
 }
 .home-link3 {
@@ -516,13 +505,13 @@
   flex-direction: column;
   background-color: var(--dl-color-gray-900);
 }
-.home-icon11 {
+.home-icon08 {
   fill: var(--dl-color-gray-white);
   width: var(--dl-size-size-unit);
   height: var(--dl-size-size-unit);
   transition: 0.3s;
 }
-.home-icon11:hover {
+.home-icon08:hover {
   fill: var(--dl-color-orange-default);
 }
 .home-main {
@@ -816,7 +805,7 @@
 .home-text23 {
   color: #f58f30;
 }
-.home-icon13 {
+.home-icon10 {
   fill: #f59730;
   width: 20px;
   align-self: center;
@@ -1022,13 +1011,13 @@
   flex-direction: column;
   background-color: var(--dl-color-gray-900);
 }
-.home-icon15 {
+.home-icon12 {
   fill: var(--dl-color-gray-white);
   width: var(--dl-size-size-unit);
   height: var(--dl-size-size-unit);
   transition: 0.3s;
 }
-.home-icon15:hover {
+.home-icon12:hover {
   fill: var(--dl-color-purple-default);
 }
 .home-link5 {
@@ -1043,13 +1032,13 @@
   flex-direction: column;
   background-color: var(--dl-color-gray-900);
 }
-.home-icon17 {
+.home-icon14 {
   fill: var(--dl-color-gray-white);
   width: var(--dl-size-size-unit);
   height: var(--dl-size-size-unit);
   transition: 0.3s;
 }
-.home-icon17:hover {
+.home-icon14:hover {
   fill: var(--dl-color-turquoise-default);
 }
 .home-link6 {
@@ -1064,13 +1053,13 @@
   flex-direction: column;
   background-color: var(--dl-color-gray-900);
 }
-.home-icon19 {
+.home-icon16 {
   fill: var(--dl-color-gray-white);
   width: var(--dl-size-size-unit);
   height: var(--dl-size-size-unit);
   transition: 0.3s;
 }
-.home-icon19:hover {
+.home-icon16:hover {
   fill: var(--dl-color-orange-default);
 }
 @media(max-width: 991px) {
@@ -1127,8 +1116,8 @@
   }
 }
 @media(max-width: 767px) {
-  .home-burger-menu {
-    display: block;
+  .home-header {
+    padding-right: 2rem;
   }
   .home-text07 {
     font-size: 50px;
