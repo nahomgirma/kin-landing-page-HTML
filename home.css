@@ -639,7 +639,7 @@
   flex-direction: row;
   padding-bottom: var(--dl-space-space-tripleunit);
   justify-content: center;
-  background-color: #f9d28f;
+  background-color: #EEEEEE;
 }
 .home-container08 {
   display: flex;
@@ -803,10 +803,10 @@
   flex-direction: row;
 }
 .home-text23 {
-  color: #f58f30;
+  color: #052C54;
 }
 .home-icon10 {
-  fill: #f59730;
+  fill: #052C54;
   width: 20px;
   align-self: center;
 }
@@ -851,7 +851,7 @@
   align-items: center;
   flex-direction: column;
   justify-content: center;
-  background-color: #f9d28f;
+  background-color: #EEEEEE;
 }
 .home-container22 {
   flex: 0 0 auto;
@@ -864,7 +864,7 @@
   align-items: center;
   flex-direction: row;
   justify-content: flex-start;
-  background-color: #f9d28f;
+  background-color: #EEEEEE;
 }
 .home-container23 {
   flex: 1;
@@ -924,7 +924,7 @@
   align-items: center;
   flex-direction: row;
   justify-content: center;
-  background-color: var(--dl-color-gray-black);
+  background-color: #2B4865;
 }
 .home-container25 {
   flex: 0 0 auto;
@@ -1077,8 +1077,11 @@
   .home-text07 {
     text-align: center;
   }
+  /* .home-text07 headline1{
+    font-size: 20px;
+  } */
   .home-testimonials {
-    background-color: #f9d28f;
+    background-color: #EEEEEE;
   }
   .home-container08 {
     flex-direction: column;
@@ -1297,7 +1300,7 @@
 .home-cta-btn2 {
   display: inline-block;
   border-radius: 25px;
-  background-color: #f58f30;
+  background-color: #052C54;
   border: none;
   color: #FFFFFF;
   text-align: center;
@@ -1340,7 +1343,7 @@
   margin: 8px 0;
   box-sizing: border-box;
   border: none;
-  border-bottom: 0px solid #f58f30;
+  border-bottom: 0px solid #052C54;
 }
 .home-email{
   width: 70%;
@@ -1348,7 +1351,7 @@
   margin: 8px 0;
   box-sizing: border-box;
   border: none;
-  border-bottom: 0px solid #f58f30;
+  border-bottom: 0px solid #052C54;
 }
 .home-name5{
   width: 70%;
@@ -1356,7 +1359,7 @@
   margin: 8px 0;
   box-sizing: border-box;
   border: none;
-  border-bottom: 0px solid #f58f30;
+  border-bottom: 0px solid #052C54;
 }
 
 
