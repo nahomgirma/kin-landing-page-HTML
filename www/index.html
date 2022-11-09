@@ -1,279 +1,360 @@
 <!DOCTYPE html>
 
 <html lang="en">
+  <head>
+    <title>KINMUSIC</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="public/playground_assets/kin.svg"
+    />
+    <meta
+      name="google-site-verification"
+      content="22TSSCPLlIR1NsWVI0jKOk50G12-1iPxzLULQiN1oV0"
+    />
+    <meta property="og:title" content="kin landing page" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<head>
-  <title>KINMUSIC</title>
-  <link rel="icon" type="image/x-icon" href="public/playground_assets/kin.svg">
-  <meta name="google-site-verification" content="22TSSCPLlIR1NsWVI0jKOk50G12-1iPxzLULQiN1oV0" />
-  <meta property="og:title" content="kin landing page" />
-  <meta property="twitter:card" content="summary_large_image" />
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta charset="utf-8" />
-  <meta property="twitter:card" content="summary_large_image" />
-  <style data-tag="reset-style-sheet">
-    html {
-      line-height: 1.15;
-    }
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css"
+    />
 
-    body {
-      margin: 0;
-    }
+    <style data-tag="reset-style-sheet">
+      html {
+        line-height: 1.15;
+      }
 
-    * {
-      box-sizing: border-box;
-      border-width: 0;
-      border-style: solid;
-    }
+      body {
+        margin: 0;
+      }
 
-    p,
-    li,
-    ul,
-    pre,
-    div,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      margin: 0;
-      padding: 0;
-    }
+      * {
+        box-sizing: border-box;
+        border-width: 0;
+        border-style: solid;
+      }
 
-    button,
-    input,
-    optgroup,
-    select,
-    textarea {
-      font-family: inherit;
-      font-size: 100%;
-      line-height: 1.15;
-      margin: 0;
-    }
+      p,
+      li,
+      ul,
+      pre,
+      div,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6 {
+        margin: 0;
+        padding: 0;
+      }
 
-    button,
-    select {
-      text-transform: none;
-    }
+      button,
+      input,
+      optgroup,
+      select,
+      textarea {
+        font-family: inherit;
+        font-size: 100%;
+        line-height: 1.15;
+        margin: 0;
+      }
 
-    button,
-    [type="button"],
-    [type="reset"],
-    [type="submit"] {
-      -webkit-appearance: button;
-    }
+      button,
+      select {
+        text-transform: none;
+      }
 
-    button::-moz-focus-inner,
-    [type="button"]::-moz-focus-inner,
-    [type="reset"]::-moz-focus-inner,
-    [type="submit"]::-moz-focus-inner {
-      border-style: none;
-      padding: 0;
-    }
+      button,
+      [type="button"],
+      [type="reset"],
+      [type="submit"] {
+        -webkit-appearance: button;
+      }
 
-    button:-moz-focus,
-    [type="button"]:-moz-focus,
-    [type="reset"]:-moz-focus,
-    [type="submit"]:-moz-focus {
-      outline: 1px dotted ButtonText;
-    }
+      button::-moz-focus-inner,
+      [type="button"]::-moz-focus-inner,
+      [type="reset"]::-moz-focus-inner,
+      [type="submit"]::-moz-focus-inner {
+        border-style: none;
+        padding: 0;
+      }
 
-    a {
-      color: inherit;
-      text-decoration: inherit;
-    }
+      button:-moz-focus,
+      [type="button"]:-moz-focus,
+      [type="reset"]:-moz-focus,
+      [type="submit"]:-moz-focus {
+        outline: 1px dotted ButtonText;
+      }
 
-    input {
-      padding: 2px 4px;
-    }
+      a {
+        color: inherit;
+        text-decoration: inherit;
+      }
 
-    img {
-      display: block;
-    }
+      input {
+        padding: 2px 4px;
+      }
 
-    html {
-      scroll-behavior: smooth
-    }
-  </style>
-  <style data-tag="default-style-sheet">
-    html {
-      font-family: Inter;
-      font-size: 16px;
-    }
+      img {
+        display: block;
+      }
 
-    body {
-      font-weight: 400;
-      font-style: normal;
-      text-decoration: none;
-      text-transform: none;
-      letter-spacing: normal;
-      line-height: 1.55;
-      color: var(--dl-color-gray-900);
-      background-color: var(--dl-color-gray-white);
+      html {
+        scroll-behavior: smooth;
+      }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
 
-    }
-  </style>
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
-    data-tag="font" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script:wght@400&display=swap"
-    data-tag="font" />
-  <link rel="stylesheet" href="./style.css" />
-</head>
+      body {
+        font-weight: 400;
+        font-style: normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.55;
+        color: var(--dl-color-gray-900);
+        background-color: var(--dl-color-gray-white);
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Nanum+Pen+Script:wght@400&display=swap"
+      data-tag="font"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
 
-<body>
-  <div>
-    <link href="./home.css" rel="stylesheet" />
+  <body>
+    <div>
+      <link href="./home.css" rel="stylesheet" />
 
-    <div class="home-container">
-      <div data-role="Header" class="home-header-container">
-        <header class="home-header">
-          <div class="home-logo">
-            <img alt="image" src="public/playground_assets/kin.png" class="home-image" />
-            <span style="font-size: 200%">KINMUSIC</span>
-          </div>
-          <div class="home-container01">
-            <!-- <div class="store-banner-store-banner">
+      <div class="home-container">
+        <div data-role="Header" class="home-header-container">
+          <header class="home-header">
+            <div class="home-logo">
+              <img
+                alt="image"
+                src="public/playground_assets/kin.png"
+                class="home-image"
+              />
+              <span style="font-size: 200%">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;KINMUSIC</span>
+            </div>
+            <div class="home-container01">
+              <!-- <div class="store-banner-store-banner">
               <img alt="image" src="public/playground_assets/google-play-badge-200h.png" class="store-banner-image" />
               <img alt="image" src="public/playground_assets/app-store-badge-200h.png" class="store-banner-image1" />
             </div> -->
-          </div>
-        </header>
-        <div data-type="MobileMenu" class="home-mobile-menu">
-          <div class="home-top">
-            <div class="home-logo1">
-              <img alt="image" src="public/playground_assets/logotype-dark.svg" class="home-image1" />
             </div>
-            <div data-type="CloseMobileMenu" class="home-close-menu">
-              <svg viewBox="0 0 1024 1024" class="home-icon">
-                <path d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z">
-                </path>
-              </svg>
+          </header>
+          <div data-type="MobileMenu" class="home-mobile-menu">
+            <div class="home-top">
+              <div class="home-logo1">
+                <img
+                  alt="image"
+                  src="public/playground_assets/logotype-dark.svg"
+                  class="home-image1"
+                />
+              </div>
+              <div data-type="CloseMobileMenu" class="home-close-menu">
+                <svg viewBox="0 0 1024 1024" class="home-icon">
+                  <path
+                    d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
+                  ></path>
+                </svg>
+              </div>
             </div>
-          </div>
-          <div class="home-bot">
-            <div class="home-container02">
-              <a href="https://instagram.com" target="_blank" rel="noreferrer noopener" class="home-link">
-                <div class="home-container03">
-                  <svg viewBox="0 0 877.7142857142857 1024" class="home-icon02">
-                    <path
-                      d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z">
-                    </path>
-                  </svg>
-                </div>
-              </a>
-              <a href="https://dribbble.com" target="_blank" rel="noreferrer noopener" class="home-link1">
-                <div class="home-container04">
-                  <svg viewBox="0 0 877.7142857142857 1024" class="home-icon04">
-                    <path
-                      d="M585.143 857.143c-5.714-33.143-27.429-147.429-80-284.571-0.571 0-1.714 0.571-2.286 0.571 0 0-222.286 77.714-294.286 234.286-3.429-2.857-8.571-6.286-8.571-6.286 65.143 53.143 148 85.714 238.857 85.714 52 0 101.143-10.857 146.286-29.714zM479.429 510.286c-9.143-21.143-19.429-42.286-30.286-63.429-193.143 57.714-378.286 53.143-384.571 53.143-0.571 4-0.571 8-0.571 12 0 96 36.571 184 96 250.286v0c102.286-182.286 304.571-247.429 304.571-247.429 5.143-1.714 10.286-2.857 14.857-4.571zM418.286 389.143c-65.143-115.429-134.286-209.143-139.429-216-104.571 49.143-182.286 145.714-206.857 261.714 9.714 0 166.286 1.714 346.286-45.714zM809.143 571.429c-8-2.286-112.571-35.429-233.714-16.571 49.143 135.429 69.143 245.714 73.143 268 84-56.571 143.429-146.857 160.571-251.429zM349.143 148c-0.571 0-0.571 0-1.143 0.571 0 0 0.571-0.571 1.143-0.571zM686.286 230.857c-65.714-58.286-152.571-93.714-247.429-93.714-30.286 0-60 4-88.571 10.857 5.714 7.429 76.571 100.571 140.571 218.286 141.143-52.571 194.286-133.714 195.429-135.429zM813.714 508c-1.143-88.571-32.571-170.286-85.143-234.286-1.143 1.143-61.143 88-209.143 148.571 8.571 17.714 17.143 36 25.143 54.286 2.857 6.286 5.143 13.143 8 19.429 129.143-16.571 256.571 11.429 261.143 12zM877.714 512c0 242.286-196.571 438.857-438.857 438.857s-438.857-196.571-438.857-438.857 196.571-438.857 438.857-438.857 438.857 196.571 438.857 438.857z">
-                    </path>
-                  </svg>
-                </div>
-              </a>
-              <a href="https://twitter.com" target="_blank" rel="noreferrer noopener" class="home-link2">
-                <div class="home-container05">
-                  <svg viewBox="0 0 950.8571428571428 1024" class="home-icon06">
-                    <path
-                      d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z">
-                    </path>
-                  </svg>
-                </div>
-              </a>
-              <a href="https://youtube.com" target="_blank" rel="noreferrer noopener" class="home-link3">
-                <div class="home-container06">
-                  <svg viewBox="0 0 1024 1024" class="home-icon08">
-                    <path
-                      d="M406.286 644.571l276.571-142.857-276.571-144.571v287.429zM512 152c215.429 0 358.286 10.286 358.286 10.286 20 2.286 64 2.286 102.857 43.429 0 0 31.429 30.857 40.571 101.714 10.857 82.857 10.286 165.714 10.286 165.714v77.714s0.571 82.857-10.286 165.714c-9.143 70.286-40.571 101.714-40.571 101.714-38.857 40.571-82.857 40.571-102.857 42.857 0 0-142.857 10.857-358.286 10.857v0c-266.286-2.286-348-10.286-348-10.286-22.857-4-74.286-2.857-113.143-43.429 0 0-31.429-31.429-40.571-101.714-10.857-82.857-10.286-165.714-10.286-165.714v-77.714s-0.571-82.857 10.286-165.714c9.143-70.857 40.571-101.714 40.571-101.714 38.857-41.143 82.857-41.143 102.857-43.429 0 0 142.857-10.286 358.286-10.286v0z">
-                    </path>
-                  </svg>
-                </div>
-              </a>
+            <div class="home-bot">
+              <div class="home-container02">
+                <a
+                  href="https://instagram.com"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="home-link"
+                >
+                  <div class="home-container03">
+                    <svg
+                      viewBox="0 0 877.7142857142857 1024"
+                      class="home-icon02"
+                    >
+                      <path
+                        d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z"
+                      ></path>
+                    </svg>
+                  </div>
+                </a>
+                <a
+                  href="https://dribbble.com"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="home-link1"
+                >
+                  <div class="home-container04">
+                    <svg
+                      viewBox="0 0 877.7142857142857 1024"
+                      class="home-icon04"
+                    >
+                      <path
+                        d="M585.143 857.143c-5.714-33.143-27.429-147.429-80-284.571-0.571 0-1.714 0.571-2.286 0.571 0 0-222.286 77.714-294.286 234.286-3.429-2.857-8.571-6.286-8.571-6.286 65.143 53.143 148 85.714 238.857 85.714 52 0 101.143-10.857 146.286-29.714zM479.429 510.286c-9.143-21.143-19.429-42.286-30.286-63.429-193.143 57.714-378.286 53.143-384.571 53.143-0.571 4-0.571 8-0.571 12 0 96 36.571 184 96 250.286v0c102.286-182.286 304.571-247.429 304.571-247.429 5.143-1.714 10.286-2.857 14.857-4.571zM418.286 389.143c-65.143-115.429-134.286-209.143-139.429-216-104.571 49.143-182.286 145.714-206.857 261.714 9.714 0 166.286 1.714 346.286-45.714zM809.143 571.429c-8-2.286-112.571-35.429-233.714-16.571 49.143 135.429 69.143 245.714 73.143 268 84-56.571 143.429-146.857 160.571-251.429zM349.143 148c-0.571 0-0.571 0-1.143 0.571 0 0 0.571-0.571 1.143-0.571zM686.286 230.857c-65.714-58.286-152.571-93.714-247.429-93.714-30.286 0-60 4-88.571 10.857 5.714 7.429 76.571 100.571 140.571 218.286 141.143-52.571 194.286-133.714 195.429-135.429zM813.714 508c-1.143-88.571-32.571-170.286-85.143-234.286-1.143 1.143-61.143 88-209.143 148.571 8.571 17.714 17.143 36 25.143 54.286 2.857 6.286 5.143 13.143 8 19.429 129.143-16.571 256.571 11.429 261.143 12zM877.714 512c0 242.286-196.571 438.857-438.857 438.857s-438.857-196.571-438.857-438.857 196.571-438.857 438.857-438.857 438.857 196.571 438.857 438.857z"
+                      ></path>
+                    </svg>
+                  </div>
+                </a>
+                <a
+                  href="https://twitter.com"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="home-link2"
+                >
+                  <div class="home-container05">
+                    <svg
+                      viewBox="0 0 950.8571428571428 1024"
+                      class="home-icon06"
+                    >
+                      <path
+                        d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"
+                      ></path>
+                    </svg>
+                  </div>
+                </a>
+                <a
+                  href="https://youtube.com"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="home-link3"
+                >
+                  <div class="home-container06">
+                    <svg viewBox="0 0 1024 1024" class="home-icon08">
+                      <path
+                        d="M406.286 644.571l276.571-142.857-276.571-144.571v287.429zM512 152c215.429 0 358.286 10.286 358.286 10.286 20 2.286 64 2.286 102.857 43.429 0 0 31.429 30.857 40.571 101.714 10.857 82.857 10.286 165.714 10.286 165.714v77.714s0.571 82.857-10.286 165.714c-9.143 70.286-40.571 101.714-40.571 101.714-38.857 40.571-82.857 40.571-102.857 42.857 0 0-142.857 10.857-358.286 10.857v0c-266.286-2.286-348-10.286-348-10.286-22.857-4-74.286-2.857-113.143-43.429 0 0-31.429-31.429-40.571-101.714-10.857-82.857-10.286-165.714-10.286-165.714v-77.714s-0.571-82.857 10.286-165.714c9.143-70.857 40.571-101.714 40.571-101.714 38.857-41.143 82.857-41.143 102.857-43.429 0 0 142.857-10.286 358.286-10.286v0z"
+                      ></path>
+                    </svg>
+                  </div>
+                </a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-      <div class="home-main">
-        <div class="home-blur-background"></div>
+        <div class="home-main">
+          <div class="home-blur-background"></div>
 
+          <div class="muzieknootjes">
+            <div class="noot-1">&#9835; &#9833;</div>
+            <div class="noot-2">&#9833;</div>
+            <div class="noot-3">&#9839; &#9834;</div>
+            <div class="noot-4">&#9834;</div>
+          </div>
 
-        <div class="muzieknootjes">
-          <div class="noot-1">
-            &#9835; &#9833;
+          <div class="home-hero">
+            <div class="home-container07">
+              <div style="display: flex; justify-content: left">
+                <span class="home-text12">
+                  <h1 class="home-text13">Kin Music በአይነቱ የተለየ ለመላው ሙዚቃ አፍቃሪዎች የተሰራ መተግበሪያ
+                  </h1>
+                  <br />
+                  <br />
+                  <h2 style="color: #2b4865">COMING SOON</h2>
+                  <h2 style="color: #2b4865">From KINIDEAS</h2>
+                </span>
+              </div>
+            </div>
+            <img
+              alt="image"
+              src="public/playground_assets/photo1-1500h.png"
+              class="home-image2"
+            />
           </div>
-          <div class="noot-2">
-            &#9833;
-          </div>
-          <div class="noot-3">
-            &#9839; &#9834;
-          </div>
-          <div class="noot-4">
-            &#9834;
-          </div>
+          <img
+            alt="image"
+            src="public/playground_assets/turquoise-circle.svg"
+            class="home-turquoise-cirble"
+          />
+          <img
+            alt="image"
+            src="public/playground_assets/orange-circle.svg"
+            class="home-purple-circle"
+          />
+          <img
+            alt="image"
+            src="public/playground_assets/left12.svg"
+            class="home-left"
+          />
+          <img
+            alt="image"
+            src="public/playground_assets/right1.svg"
+            class="home-right"
+          />
         </div>
-
-
-        <div class="home-hero">
-          <div class="home-container07">
-            <div style="display: flex; justify-content: left">
-              <span class="home-text12">
-              <h1 class="home-text13">Kin Music በአይነቱ የተለየ ለመላው ሙዚቃ አፍቃሪዎች የተሰራ መተግበሪያ ነው</h1>
-              <br />
-              <br />
-              <h2 style="color: #2B4865;">COMING SOON</h2>
-              <h2 style="color: #2B4865;"s>From  KINIDEAS</h2>
+        <div class="home-features">
+          <br>
+          <h2 class="headline2 home-text11">Best audio listening experience</h2>
+          <span class="home-text12">
+            <br>
+            <span class="home-text13">Kin music is a music streaming app designed to give you the best audio listening experience. Our services include
             </span>
-          </div>
-          </div>
-          <img alt="image" src="public/playground_assets/photo1-1500h.png" class="home-image2" />
-        </div>
-        <img alt="image" src="public/playground_assets/turquoise-circle.svg" class="home-turquoise-cirble" />
-        <img alt="image" src="public/playground_assets/orange-circle.svg" class="home-purple-circle" />
-        <img alt="image" src="public/playground_assets/left12.svg" class="home-left" />
-        <img alt="image" src="public/playground_assets/right1.svg" class="home-right" />
-      </div>
-      <div class="home-features">
-        <h2 class="headline2 home-text11">Best audio listening experience</h2>
-        <span class="home-text12">
-          <span class="home-text13">Kin music is a music streaming app designed to give you the best audio listening experience. Our services include
           </span>
-        </span>
-        <div class="home-features1">
-          <div class="app-component-container">
-            <img alt="image" src="public/playground_assets/kid_listening.svg" class="app-component-image" />
-            <h5 class="app-component-text headline5"><span>Music</span></h5>
-            <span class="app-component-text1">
-              <span>Get the latest streaming music from your favorite artists
+          <div class="home-features1">
+            <div class="app-component-container">
+              <img
+                alt="image"
+                src="public/playground_assets/kid_listening.svg"
+                class="app-component-image"
+              />
+              <h5 class="app-component-text headline5"><span>Music</span></h5>
+              <span class="app-component-text1">
+                <span>Get the latest streaming music from your favorite artists
+                </span>
               </span>
-            </span>
-          </div>
-          <div class="component1-container">
-            <img alt="image" src="public/playground_assets/podcast.svg" class="component1-image" />
-            <h5 class="component1-text headline5"><span>Podcast</span></h5>
-            <span class="component1-text1">
-              <span>Listen to your favorite local podcasts on the go</span>
-            </span>
-          </div>
-          <div class="component2-container">
-            <img alt="image" src="public/playground_assets/radio.svg" class="component2-image" />
-            <h5 class="component2-text headline5"><span>Radio</span></h5>
-            <span class="component2-text1">
-              <span>Tune in to your favorite station, get all your daily info</span>
-            </span>
+            </div>
+            <div class="component1-container">
+              <img
+                alt="image"
+                src="public/playground_assets/podcast.svg"
+                class="component1-image"
+              />
+              <h5 class="component1-text headline5"><span>Podcast</span></h5>
+              <span class="component1-text1">
+                <span>Listen to your favorite local podcasts on the go</span>
+              </span>
+            </div>
+            <div class="component2-container">
+              <img
+                alt="image"
+                src="public/playground_assets/radio.svg"
+                class="component2-image"
+              />
+              <h5 class="component2-text headline5"><span>Radio</span></h5>
+              <span class="component2-text1">
+                <span>Tune in to your favorite station, get all your daily info</span
+                >
+              </span>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="home-testimonials">
-        
-        <div class="home-container08">
-          
-          <div class="home-container09">
-            
-            <!-- <img alt="image" src="public/playground_assets/quote-mark1.svg" class="home-image3" />
+        <div class="home-testimonials">
+          <div class="home-container08">
+            <div class="home-container09">
+              <!-- <img alt="image" src="public/playground_assets/quote-mark1.svg" class="home-image3" />
             <h1 class="home-text14 headline2">A few words from the team</h1>
             <span>What we have to say about ourselves</span>
             <div class="home-container10">
@@ -293,10 +374,10 @@
                 </div>
               </div>
             </div> -->
-          </div>
-          <div class="home-container11">
-            <div class="home-container12">
-              <!-- <div class="component5-container">
+            </div>
+            <div class="home-container11">
+              <div class="home-container12">
+                <!-- <div class="component5-container">
                 <div class="component5-container1">
                   <img alt="image" src="public/playground_assets/quote-mark1.svg" class="component5-image" />
                   <div class="component5-container2">
@@ -311,9 +392,9 @@
                   </div>
                 </div>
               </div> -->
-            </div>
-            <div class="home-container13">
-              <!-- <div class="component13-container">
+              </div>
+              <div class="home-container13">
+                <!-- <div class="component13-container">
                 <div class="component13-container1">
                   <img alt="image" src="public/playground_assets/quote-mark1.svg" class="component13-image" />
                   <div class="component13-container2">
@@ -328,47 +409,62 @@
                   </div>
                 </div>
               </div> -->
-            </div>
-            <div class="home-container15">
-              <div class="home-container16">
-                <div class="component7-container">
-                  <img alt="image" src="public/playground_assets/download.svg" class="component7-image" />
-                  <div class="component7-container1">
-                    <h1 class="headline4"><span>0+</span></h1>
-                    <span class="body1"><span>Downloads per day</span></span>
-                  </div>
-                </div>
-                <div class="component8-container">
-                  <img alt="image" src="public/playground_assets/users.svg" class="component8-image" />
-                  <div class="component8-container1">
-                    <h1 class="headline4"><span>6</span></h1>
-                    <span class="body1"><span>Users</span></span>
-                  </div>
-                </div>
               </div>
-              <div class="home-container17">
-                <div class="component11-container">
-                  <img alt="image" src="public/playground_assets/clients.svg" class="component11-image" />
-                  <div class="component11-container1">
-                    <h1 class="headline4"><span>0+</span></h1>
-                    <span class="body1"><span>Clients</span></span>
+              <div class="home-container15">
+                <div class="home-container16">
+                  <div class="component7-container">
+                    <img
+                      alt="image"
+                      src="public/playground_assets/download.svg"
+                      class="component7-image"
+                    />
+                    <div class="component7-container1">
+                      <h1 class="headline4"><span>0+</span></h1>
+                      <span class="body1"><span>Downloads per day</span></span>
+                    </div>
+                  </div>
+                  <div class="component8-container">
+                    <img
+                      alt="image"
+                      src="public/playground_assets/users.svg"
+                      class="component8-image"
+                    />
+                    <div class="component8-container1">
+                      <h1 class="headline4"><span>6</span></h1>
+                      <span class="body1"><span>Users</span></span>
+                    </div>
                   </div>
                 </div>
-                <div class="component9-container">
-                  <img alt="image" src="public/playground_assets/country_all.svg" class="component9-image" />
-                  <div class="component9-container1">
-                    <h1 class="headline4"><span>1</span></h1>
-                    <span class="body1"><span>Countries</span></span>
+                <div class="home-container17">
+                  <div class="component11-container">
+                    <img
+                      alt="image"
+                      src="public/playground_assets/clients.svg"
+                      class="component11-image"
+                    />
+                    <div class="component11-container1">
+                      <h1 class="headline4"><span>0+</span></h1>
+                      <span class="body1"><span>Clients</span></span>
+                    </div>
+                  </div>
+                  <div class="component9-container">
+                    <img
+                      alt="image"
+                      src="public/playground_assets/country_all.svg"
+                      class="component9-image"
+                    />
+                    <div class="component9-container1">
+                      <h1 class="headline4"><span>1</span></h1>
+                      <span class="body1"><span>Countries</span></span>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          
         </div>
-      </div>
-      <div class="home-achievements">
-        <!-- <div class="home-container14">
+        <div class="home-achievements">
+          <!-- <div class="home-container14">
           <h2 class="home-text16">
             <span class="home-text17">Achievements so far</span>
           </h2>
@@ -377,21 +473,24 @@
             </span>
           </span>
         </div> -->
-        
-      </div>
-      <div class="home-feature1">
-        <div class="home-container18">
-          <img alt="image" src="public/playground_assets/man-600h.png" image_src="dab1286f-0104-48fa-bd7d-135e132129dd"
-            class="home-image4" />
         </div>
-        <div class="home-container19">
-          <h3 class="headline3">Vision</h3>
-          <span class="home-text21 lead1">
-            <span class="home-text22">We picture a platform for culture where professionals can create without being constrained by any medium and where everyone can take part in immersive artistic experiences that help us sympathize with one another and feel like we're a part of something bigger.
+        <div class="home-feature1">
+          <div class="home-container18">
+            <img
+              alt="image"
+              src="public/playground_assets/man-600h.png"
+              image_src="dab1286f-0104-48fa-bd7d-135e132129dd"
+              class="home-image4"
+            />
+          </div>
+          <div class="home-container19">
+            <h3 class="headline3">Vision</h3>
+            <span class="home-text21 lead1">
+              <span class="home-text22">We picture a platform for culture where professionals can create without being constrained by any medium and where everyone can take part in immersive artistic experiences that help us sympathize with one another and feel like we're a part of something bigger.
+              </span>
             </span>
-          </span>
-          <div class="home-container20">
-            <!-- <button class="home-button button">
+            <div class="home-container20">
+              <!-- <button class="home-button button">
               <span class="home-text23 mediumLabel">Get Started</span>
               <svg viewBox="0 0 1024 1024" class="home-icon10">
                 <path
@@ -399,148 +498,168 @@
                 </path>
               </svg>
             </button> -->
+            </div>
           </div>
         </div>
-      </div>
-      <div class="home-feature2">
-        <div class="home-container21">
-          <h2 class="headline2 home-text24">
-            <span class="home-text25">Enter the world of online streaming
+        <div class="home-feature2">
+          <div class="home-container21">
+            <h2 class="headline2 home-text24">
+              <span class="home-text25"
+                >Enter the world of online streaming
+              </span>
+            </h2>
+            <span class="home-text26 lead1">
+              <span class="home-text27">As online music is on the rise we strive to build a user friendly streaming app where you can easily access not only artists songs and podcasts but also listen to the radio station of your choice</span>
             </span>
-          </h2>
-          <span class="home-text26 lead1">
-            <span class="home-text27">As online music is on the rise we strive to build a user friendly streaming app where you can easily access not only artists songs and podcasts but also listen to the radio station of your choice
-            </span>
-          </span>
-        </div>
+          </div>
 
-
-
-
-        <div class="home-get-in-touch">
-          <h1 class="home-text36 section-Heading">Get in touch</h1>
-          <div class="home-content-container6">
-            <div class="home-form-container">
-              <h2 class="home-heading08 bigCard-Heading">Send us a message</h2>
-              <input type="text" required="true" placeholder="Name" class="home-name5 input" />
-              <input type="text" required="true" placeholder="E-mail" class="home-email input" />
-              <textarea placeholder="Your Message" class="home-message textarea"></textarea>
-              <button class="home-cta-btn2 anchor button">SEND</button>
-            </div>
-            <div class="home-locations-container">
-              <div class="home-location-1">
-                <span class="home-heading09">Addis Ababa, Ethiopia</span>
-                <div class="home-adress">
-                  <svg viewBox="0 0 1024 1024" class="home-icon54">
-                    <path
-                      d="M512 0c-176.732 0-320 143.268-320 320 0 320 320 704 320 704s320-384 320-704c0-176.732-143.27-320-320-320zM512 512c-106.040 0-192-85.96-192-192s85.96-192 192-192 192 85.96 192 192-85.96 192-192 192z">
-                    </path>
-                  </svg>
-                  <span class="section-Text">22, Awraris</span>
-                </div>
-                <div class="home-email1">
-                  <svg viewBox="0 0 1024 1024" class="home-icon56">
-                    <path
-                      d="M854 342v-86l-342 214-342-214v86l342 212zM854 170q34 0 59 26t25 60v512q0 34-25 60t-59 26h-684q-34 0-59-26t-25-60v-512q0-34 25-60t59-26h684z">
-                    </path>
-                  </svg>
-                  <span class="section-Text">support@kinideas.com</span>
-                </div>
-                <div class="home-phone">
-                  <svg viewBox="0 0 804.5714285714286 1024" class="home-icon58">
-                    <path
-                      d="M804.571 708.571c0 20.571-9.143 60.571-17.714 79.429-12 28-44 46.286-69.714 60.571-33.714 18.286-68 29.143-106.286 29.143-53.143 0-101.143-21.714-149.714-39.429-34.857-12.571-68.571-28-100-47.429-97.143-60-214.286-177.143-274.286-274.286-19.429-31.429-34.857-65.143-47.429-100-17.714-48.571-39.429-96.571-39.429-149.714 0-38.286 10.857-72.571 29.143-106.286 14.286-25.714 32.571-57.714 60.571-69.714 18.857-8.571 58.857-17.714 79.429-17.714 4 0 8 0 12 1.714 12 4 24.571 32 30.286 43.429 18.286 32.571 36 65.714 54.857 97.714 9.143 14.857 26.286 33.143 26.286 50.857 0 34.857-103.429 85.714-103.429 116.571 0 15.429 14.286 35.429 22.286 49.143 57.714 104 129.714 176 233.714 233.714 13.714 8 33.714 22.286 49.143 22.286 30.857 0 81.714-103.429 116.571-103.429 17.714 0 36 17.143 50.857 26.286 32 18.857 65.143 36.571 97.714 54.857 11.429 5.714 39.429 18.286 43.429 30.286 1.714 4 1.714 8 1.714 12z">
-                    </path>
-                  </svg>
-                  <span class="section-Text">+251-911-510-004</span>
+          <div class="home-get-in-touch">
+            <h1 class="home-text36 section-Heading">Get in touch</h1>
+            <div class="home-content-container6">
+              <div class="home-form-container">
+                <h2 class="home-heading08 bigCard-Heading">
+                  Send us a message
+                </h2>
+                <input
+                  type="text"
+                  required="true"
+                  placeholder="Name"
+                  class="home-name5 input"
+                />
+                <input
+                  type="text"
+                  required="true"
+                  placeholder="E-mail"
+                  class="home-email input"
+                />
+                <textarea
+                  placeholder="Your Message"
+                  class="home-message textarea"
+                ></textarea>
+                <button class="home-cta-btn2 anchor button">SEND</button>
+              </div>
+              <div class="home-locations-container">
+                <div class="home-location-1">
+                  <span class="home-heading09">Addis Ababa, Ethiopia</span>
+                  <div class="home-adress">
+                    <svg viewBox="0 0 1024 1024" class="home-icon54">
+                      <path
+                        d="M512 0c-176.732 0-320 143.268-320 320 0 320 320 704 320 704s320-384 320-704c0-176.732-143.27-320-320-320zM512 512c-106.040 0-192-85.96-192-192s85.96-192 192-192 192 85.96 192 192-85.96 192-192 192z"
+                      ></path>
+                    </svg>
+                    <span class="section-Text">22, Awraris</span>
+                  </div>
+                  <div class="home-email1">
+                    <svg viewBox="0 0 1024 1024" class="home-icon56">
+                      <path
+                        d="M854 342v-86l-342 214-342-214v86l342 212zM854 170q34 0 59 26t25 60v512q0 34-25 60t-59 26h-684q-34 0-59-26t-25-60v-512q0-34 25-60t59-26h684z"
+                      ></path>
+                    </svg>
+                    <span class="section-Text">support@kinideas.com</span>
+                  </div>
+                  <div class="home-phone">
+                    <svg
+                      viewBox="0 0 804.5714285714286 1024"
+                      class="home-icon58"
+                    >
+                      <path
+                        d="M804.571 708.571c0 20.571-9.143 60.571-17.714 79.429-12 28-44 46.286-69.714 60.571-33.714 18.286-68 29.143-106.286 29.143-53.143 0-101.143-21.714-149.714-39.429-34.857-12.571-68.571-28-100-47.429-97.143-60-214.286-177.143-274.286-274.286-19.429-31.429-34.857-65.143-47.429-100-17.714-48.571-39.429-96.571-39.429-149.714 0-38.286 10.857-72.571 29.143-106.286 14.286-25.714 32.571-57.714 60.571-69.714 18.857-8.571 58.857-17.714 79.429-17.714 4 0 8 0 12 1.714 12 4 24.571 32 30.286 43.429 18.286 32.571 36 65.714 54.857 97.714 9.143 14.857 26.286 33.143 26.286 50.857 0 34.857-103.429 85.714-103.429 116.571 0 15.429 14.286 35.429 22.286 49.143 57.714 104 129.714 176 233.714 233.714 13.714 8 33.714 22.286 49.143 22.286 30.857 0 81.714-103.429 116.571-103.429 17.714 0 36 17.143 50.857 26.286 32 18.857 65.143 36.571 97.714 54.857 11.429 5.714 39.429 18.286 43.429 30.286 1.714 4 1.714 8 1.714 12z"
+                      ></path>
+                    </svg>
+                    <span class="section-Text">+251-911-510-004</span>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-
-
-
-
-      </div>
-      <div class="home-c-t-a">
-        <div class="home-container22">
-          <div class="home-container23">
-            <h2 class="headline2 home-text28">
-              <span class="home-text29">All your favorite music, podcasts and radio programs
+        <div class="home-c-t-a">
+          <div class="home-container22">
+            <div class="home-container23">
+              <h2 class="headline2 home-text28">
+                <span class="home-text29"
+                  >All your favorite music, podcasts and radio programs
+                </span>
+              </h2>
+              <span class="home-text30 lead1">
+                <span class="home-text31">Download the app and join the millions of people streaming their favorite music on Kin Music</span>
               </span>
-            </h2>
-            <span class="home-text30 lead1">
-              <span class="home-text31">Download the app and join the millions of people streaming their favorite music on Kin Music
+              <span class="home-text32 subtitle2">
+                <span class="home-text33">COMING SOON ON</span>
               </span>
-            </span>
-            <span class="home-text32 subtitle2">
-              <span class="home-text33">COMING SOON ON</span>
-            </span>
-            <div class="store-banner-store-banner">
-              <img alt="image" src="public/playground_assets/google-play-badge-200h.png" class="store-banner-image" />
-              <img alt="image" src="public/playground_assets/app-store-badge-200h.png" class="store-banner-image1" />
+              <div class="store-banner-store-banner">
+                <img
+                  alt="image"
+                  src="public/playground_assets/google-play-badge-200h.png"
+                  class="store-banner-image"
+                />
+                <img
+                  alt="image"
+                  src="public/playground_assets/app-store-badge-200h.png"
+                  class="store-banner-image1"
+                />
+              </div>
             </div>
-          </div>
-          <div class="home-container24">
-            <img alt="image" src="public/playground_assets/photo2-300w.png"
-              image_src="dab1286f-0104-48fa-bd7d-135e132129dd" class="home-image6" />
-            <img alt="image" src="public/playground_assets/apple-iphone13album-300w.png"
-              image_src="dab1286f-0104-48fa-bd7d-135e132129dd" class="home-image7" />
+            <div class="home-container24">
+              <img
+                alt="image"
+                src="public/playground_assets/photo2-300w.png"
+                image_src="dab1286f-0104-48fa-bd7d-135e132129dd"
+                class="home-image6"
+              />
+              <img
+                alt="image"
+                src="public/playground_assets/apple-iphone13album-300w.png"
+                image_src="dab1286f-0104-48fa-bd7d-135e132129dd"
+                class="home-image7"
+              />
+            </div>
           </div>
         </div>
-      </div>
-      <div class="home-footer">
-        <footer class="home-container25">
-          <img alt="image" src="public/playground_assets/kin.png" class="home-image8" />
-          <div class="home-container26">
-            <a href="404.html" class="home-text34">About</a>
-            <a href="404.html" class="home-text35">Developers</a>
-            <a href="404.html" class="home-text36">For Artists</a>
-          </div>
-          <div class="home-divider"></div>
-          <div class="home-container27">
-            <span class="home-text37 body2">© 2022 Kinideas. All rights reserved
-            </span>
-            <div>
-              <a href="404.html" class="home-text35">Privacy Policy</a>
-              <a href="404.html" class="home-text36">Terms & Conditions</a>
+        <div class="footer-dark">
+          <footer>
+            <div class="container">
+              <div class="row">
+                <div class="col-sm-6 col-md-3 item">
+                  <h3>Services</h3>
+                  <ul>
+                    <li><a>Web Development</a></li>
+                    <li><a>Mobile App Development</a></li>
+                    <li><a>Cloud Hosting</a></li>
+                    <li><a>Graphic Design</a></li>
+                  </ul>
+                </div>
+                <div class="col-sm-6 col-md-3 item">
+                  <h3>Contact</h3>
+                  <ul>
+                    <li><a href="#">Addis Ababa, Ethiopia</a></li>
+                    <li><a href="#">22, Awraris</a></li>
+                    <li><a href="#">support@kinideas.com</a></li>
+                    <li><a href="#">+251-930-855-555</a></li>
+                  </ul>
+                </div>
+                <div class="col-md-6 item text">
+                  <h3>KIN IDEAS</h3>
+                  <p>
+                    Kin Ideas is a Software Development company based in Addis
+                    Ababa. We specialize in Web development, Mobile App
+                    development and cloud hosting services.
+                  </p>
+                </div>
+                <div class="col item social">
+                  <a href="www.facebook.com"><i class="icon ion-social-facebook"></i></a
+                  ><a href="www.twitter.com"><i class="icon ion-social-twitter"></i></a
+                  ><a href="www.instagram.com"><i class="icon ion-social-instagram"></i></a>
+                </div>
+              </div>
+              <p class="copyright">Kin Ideas © 2022</p>
             </div>
-            <div class="home-container28">
-              <a href="https://instagram.com" target="_blank" rel="noreferrer noopener" class="home-link4">
-                <div class="home-container29">
-                  <svg viewBox="0 0 877.7142857142857 1024" class="home-icon12">
-                    <path
-                      d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z">
-                    </path>
-                  </svg>
-                </div>
-              </a>
-              <a href="https://twitter.com" target="_blank" rel="noreferrer noopener" class="home-link5">
-                <div class="home-container30">
-                  <svg viewBox="0 0 950.8571428571428 1024" class="home-icon14">
-                    <path
-                      d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z">
-                    </path>
-                  </svg>
-                </div>
-              </a>
-              <a href="https://youtube.com" target="_blank" rel="noreferrer noopener" class="home-link6">
-                <div class="home-container31">
-                  <svg viewBox="0 0 1024 1024" class="home-icon16">
-                    <path
-                      d="M406.286 644.571l276.571-142.857-276.571-144.571v287.429zM512 152c215.429 0 358.286 10.286 358.286 10.286 20 2.286 64 2.286 102.857 43.429 0 0 31.429 30.857 40.571 101.714 10.857 82.857 10.286 165.714 10.286 165.714v77.714s0.571 82.857-10.286 165.714c-9.143 70.286-40.571 101.714-40.571 101.714-38.857 40.571-82.857 40.571-102.857 42.857 0 0-142.857 10.857-358.286 10.857v0c-266.286-2.286-348-10.286-348-10.286-22.857-4-74.286-2.857-113.143-43.429 0 0-31.429-31.429-40.571-101.714-10.857-82.857-10.286-165.714-10.286-165.714v-77.714s-0.571-82.857 10.286-165.714c9.143-70.857 40.571-101.714 40.571-101.714 38.857-41.143 82.857-41.143 102.857-43.429 0 0 142.857-10.286 358.286-10.286v0z">
-                    </path>
-                  </svg>
-                </div>
-              </a>
-            </div>
-          </div>
-        </footer>
+          </footer>
+        </div>
       </div>
     </div>
-  </div>
-  <script src="https://unpkg.com/@teleporthq/teleport-custom-scripts"></script>
-</body>
-
+    <script src="https://unpkg.com/@teleporthq/teleport-custom-scripts"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+  </body>
 </html>
